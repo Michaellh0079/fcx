@@ -4,14 +4,7 @@ import styles from '../styles/Home.module.css'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </>
+    <Component {...pageProps} />
   )
 }
 

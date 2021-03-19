@@ -1,4 +1,5 @@
 // components/NavBar.js
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 const navBarStyle = {
@@ -6,13 +7,15 @@ const navBarStyle = {
     color: "white",
   };
   
-  const NavBar = () => (
+  const NavBar = (parameters) => (
     <div className="NavBar">
       <div className={styles.left_pane}>
         <h3>1. Overview</h3>
-          <div className={styles.subsection_nav_link}>
-            <p>1.1 FCX – Field Campaign Explorer</p>
-            <p>1.2 GOES-R PLT</p>
+          <div className={styles.subsection_nav_link }>
+          <ul>
+            <li> <Link href="/"> 1.1 FCX – Field Campaign Explorer</Link> </li> 
+            <li> <Link href="/gose-r"> 1.2 GOES-R PLT </Link> </li>
+          </ul>
           </div>
         <h3>2. FCX Functionalities</h3>
         <div className={styles.subsection_nav_link}>

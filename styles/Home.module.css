@@ -74,6 +74,10 @@
   font-size: 15px;
 }
 
+.Link {
+  display:block;
+}
+
 .footer {
   width: 100vw;
   height: 4rem;
