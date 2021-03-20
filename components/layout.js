@@ -1,13 +1,17 @@
-// components/Layout.js
-import styles from '../styles/Home.module.css'
-import NavBar from './navbar.js'
 
-const Layout = ({ children }) => {
-  return (
-    <div >
-      {children}
-    </div>)
-  }
+ // components/Layout.js
+ import Navbar from "./navbar";
+ import styles from '../styles/Home.module.css'
+ import Footer from "./footer"
+ 
+ const Layout = ({ children }) => {
+   return (
+     <div className={styles.grid_container}>
+       <Navbar />
+       {children}
+       <Footer/>
+     </div>
+   );
+ };
 
-
-export default Layout;
+ export default Layout;

@@ -1,11 +1,12 @@
 import React from 'react';
 import Layout from '../components/layout';
-import Overview from '../components/overview';
+import MenuComponent from '../components/menu-bar';
+import styles from '../styles/Home.module.css'
 
-export default function Overview() {
+export default function MenuBar() {
   return (
     <Layout>
-      <Overview/>
+      <MenuComponent/>
       <div className={styles.right_pane}>Temp Right Pane</div>
     </Layout>    
   )

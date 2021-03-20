@@ -1,12 +1,12 @@
 import React from 'react';
-import GoserComponent from '../components/gose-r';
+import DataSubsettingComponent from '../components/data-subsetting';
 import Layout from '../components/layout';
 import styles from '../styles/Home.module.css';
 
-export default function Goser() {
+export default function DataSubsetting() {
   return (
     <Layout>
-      <GoserComponent/>
+      <DataSubsettingComponent/>
       <div className={styles.right_pane}>Temp Right Pane</div>
     </Layout>
   )

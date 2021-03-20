@@ -21,17 +21,25 @@ const navBarStyle = {
         <div className={styles.subsection_nav_link}>
           <h4>2.1 General Visualization – Web Delivery</h4>
           <div className={styles.subsection_nav_link}>
-            <p>2.1.1 Data Viewer</p>
-            <p>2.1.2 Color Schemes</p>
-            <p>2.1.3 Dashboard </p>
+          <ul>
+              <li> <Link href="/data-viewer">2.1.1 Data Viewer</Link> </li>
+              <li> <Link href="/color-schemes">2.1.2 Color Schemes</Link> </li>
+              <li> <Link href="/dashboard">2.1.3 Dashboard (Timeline)</Link> </li>
+          </ul>    
           </div>
-          <h4>2.2 Menu Bar (graphics may need re-arrangement)</h4>
+          <h4>
+            <Link href="/menu-bar">2.2 Menu Bar (graphics may need re-arrangement)</Link>
+          </h4>          
           <h4>2.3 Mouse Functions</h4>
           <div className={styles.subsection_nav_link}>
-            <p>2.3.1 General Mouse Actions</p>
-            <p>2.3.2 Mouse-Over and Click Triggered InfoBox</p>
+          <ul>
+            <li> <Link href="/mouse-general">2.3.1 General Mouse Actions</Link> </li>
+            <li> <Link href="/mouse-over-click">2.3.2 Mouse-Over and Click Triggered InfoBox</Link> </li>
+          </ul>
           </div>
-          <h4>2.4 Data Subsetting and Download (in progress)</h4>
+          <h4>
+            <Link href="/menu-bar">2.4 Data Subsetting and Download (in progress)</Link>
+          </h4>  
         </div>
         <h3>3. FCX Use Cases</h3>
         <div className={styles.subsection_nav_link}>
