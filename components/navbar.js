@@ -10,16 +10,22 @@ const navBarStyle = {
   const NavBar = (parameters) => (
     <div className="NavBar">
       <div className={styles.left_pane}>
-        <h3>1. Overview</h3>
+        <h3>
+          <Link href="/">1. Overview</Link>
+        </h3>
           <div className={styles.subsection_nav_link }>
           <ul>
             <li> <Link href="/"> 1.1 FCX – Field Campaign Explorer</Link> </li> 
             <li> <Link href="/gose-r"> 1.2 GOES-R PLT </Link> </li>
           </ul>
           </div>
-        <h3>2. FCX Functionalities</h3>
+        <h3>
+          <Link href="/data-viewer">2. FCX Functionalities</Link>
+        </h3>
         <div className={styles.subsection_nav_link}>
-          <h4>2.1 General Visualization – Web Delivery</h4>
+          <h4>
+            <Link href="/data-viewer">2.1 General Visualization – Web Delivery</Link>
+          </h4>
           <div className={styles.subsection_nav_link}>
           <ul>
               <li> <Link href="/data-viewer">2.1.1 Data Viewer</Link> </li>
@@ -30,7 +36,9 @@ const navBarStyle = {
           <h4>
             <Link href="/menu-bar">2.2 Menu Bar (graphics may need re-arrangement)</Link>
           </h4>          
-          <h4>2.3 Mouse Functions</h4>
+          <h4>
+            <Link href="/mouse-general">2.3 Mouse Functions</Link>
+          </h4>
           <div className={styles.subsection_nav_link}>
           <ul>
             <li> <Link href="/mouse-general">2.3.1 General Mouse Actions</Link> </li>
@@ -38,15 +46,17 @@ const navBarStyle = {
           </ul>
           </div>
           <h4>
-            <Link href="/menu-bar">2.4 Data Subsetting and Download (in progress)</Link>
+            <Link href="/data-subsetting">2.4 Data Subsetting and Download (in progress)</Link>
           </h4>  
         </div>
-        <h3>3. FCX Use Cases</h3>
+        <h3><Link href="/glm-detection">3. FCX Use Cases</Link></h3>
         <div className={styles.subsection_nav_link}>
-            <p>3.1 Assessment of GLM Detection</p>
-            <p>3.2 Lightning Observations by the GLM</p>
-            <p>3.3 Storm Characteristics – Lightning, Microphysics, Dynamics</p>
-            <p>3.4 Request a Subset</p>
+          <ul>
+            <li><p><Link href="/glm-detection">3.1 Assessment of GLM Detection</Link></p></li>            
+            <li><p><Link href="/glm-lo">3.2 Lightning Observations by the GLM</Link></p></li>    
+            <li><p><Link href="/storm-characteristics">3.3 Storm Characteristics – Lightning, Microphysics, Dynamics</Link></p></li>    
+            <li><p><Link href="/subset-request">3.4 Request a Subset</Link></p></li>    
+          </ul>
         </div>
         <h3>4. Open Source Code</h3>
           <h4>4.1 Architecture In Cloud</h4>
